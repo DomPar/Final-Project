@@ -92,7 +92,7 @@ function OwnProfile() {
         <div>{showTextBox && (
           <form onSubmit={sendDescription}>
         <input type="text" value={description} onChange={handleDescriptionChange} placeholder="Ingrese Description..." cols="30" rows="10"/>
-        <button type='submit' id='submit-description-user'>Confirm Changes</button>
+        <button type='submit' id='submit-description-user'>Confirm</button>
         </form>
         )}</div>
 

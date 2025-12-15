@@ -37,11 +37,23 @@
 }
 
 #description-user{
-    width: 50%;
-    text-align: center;
+    width: 60%;
+    
 }
 
 #new-post-button {
+    width: 110px;
+    height: 35px;
+    background-color:#FAEBE0;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 10px 5px 5px rgb(233, 222, 222);
+    size: 20px;
+}
+
+#edit-profile-user {
     width: 110px;
     height: 35px;
     background-color:#FAEBE0;
@@ -70,6 +82,18 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: 10px 5px 5px rgb(233, 222, 222);
+}
+
+#submit-description-user {
+    width: 110px;
+    height: 35px;
+    background-color:#FAEBE0;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 10px 5px 5px rgb(233, 222, 222);
+    size: 20px;
 }
 
 #edit-avatar {

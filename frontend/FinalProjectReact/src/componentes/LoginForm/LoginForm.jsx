@@ -50,7 +50,7 @@ function LoginCard() {
           variant="outlined"
           fullWidth={true}
           sx={{ 
-            width: 300,
+            width: 400,
             marginBottom: '20px', 
             bgcolor: 'whitesmoke', 
             borderRadius: 6,
@@ -66,7 +66,7 @@ function LoginCard() {
           variant="outlined"
           fullWidth={true}
           sx={{ 
-            width: 300,
+            width: 400,
             bgcolor: 'whitesmoke', 
             borderRadius: 6,
               '& .MuiOutlinedInput-root': {
@@ -75,7 +75,7 @@ function LoginCard() {
               }}
         />
       </CardContent>
-      <CardActions sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+      <CardActions sx={{ display: 'flex', justifyContent: 'center' }}>
         <Button sx={{ textTransform: 'none', bgcolor: '#87ab69', borderRadius: 20, color: 'white' }} onClick={onLogin} color="success">
             Log In
         </Button> 
