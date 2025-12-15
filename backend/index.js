@@ -1,4 +1,7 @@
+console.log('🚀 Iniciando aplicación...')
 require('dotenv').config()
+console.log('✅ dotenv cargado')
+console.log('📊 Variables:', process.env.DB_NAME, process.env.DB_USER, process.env.DB_HOST)
 const express = require("express")
 const morgan = require("morgan")
 const cors = require("cors")
