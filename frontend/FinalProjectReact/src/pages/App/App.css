@@ -2,7 +2,7 @@
     height: 85vh;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 1fr 50fr;
     grid-template-rows: 0.5fr 5fr;
     margin: 0;
     background-image: url(/images/Background.png);
