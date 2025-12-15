@@ -1,20 +1,62 @@
 import React, { useEffect, useState } from "react";
 import "./ViewPost.css";
 import CustomizedRating from "../../componentes/HeartsRating/HeartsRating";
-import { getOnePost } from "../../services/postService";
-import { useParams } from "react-router-dom";
+import { getOnePost, updatePost, deleteOnePost } from "../../services/postService";
+import { useParams, useNavigate } from "react-router-dom";
 
 function ViewPost() {
   const [post, setPost] = useState(null);
+  const [isEditing, setIsEditing] = useState(false);
+
+  const [editData, setEditData] = useState({
+    title: "",
+    description: "",
+    media: "",
+  });
+
   const { postId } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const getPost = async () => {
+    const fetchPost = async () => {
       const { result } = await getOnePost(postId);
       setPost(result);
+      setEditData({
+        title: result?.title || "",
+        description: result?.description || "",
+        media: result?.media || "",
+      });
     };
-    getPost();
+    fetchPost();
   }, [postId]);
+
+  const handleChange = (e) => {
+    setEditData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSave = async () => {
+    await updatePost(postId, editData);
+
+    setPost((prev) => ({
+      ...prev,
+      ...editData,
+    }));
+
+    setIsEditing(false);
+  };
+
+  const handleDelete = async () => {
+    const ok = window.confirm("¿Seguro que quieres borrar este post?");
+    if (!ok) return;
+
+    await deleteOnePost(postId);
+
+    // 👇 ruta correcta según tu router
+    navigate("/app/ownprofile");
+  };
 
   if (!post) return null;
 
@@ -23,7 +65,7 @@ function ViewPost() {
       <div id="detailed-post-card">
         <div id="dpo-left">
           <div id="detailed-post-picture">
-            <img src={post.media} alt="Picture" />
+            <img src={isEditing ? editData.media : post.media} alt="Post" />
           </div>
 
           <div id="detailed-post-hearts">
@@ -37,12 +79,65 @@ function ViewPost() {
               <img src={post.user?.avatar} alt="Avatar" />
             </div>
 
-            <div id="detailed-post-title">
-              <h1>{post.title}</h1>
-            </div>
+            {!isEditing ? (
+              <div id="detailed-post-title">
+                <h1>{post.title}</h1>
+              </div>
+            ) : (
+              <input
+                type="text"
+                name="title"
+                value={editData.title}
+                onChange={handleChange}
+              />
+            )}
           </div>
 
-          <div id="detailed-post-description">{post.description}</div>
+          {!isEditing ? (
+            <div id="detailed-post-description">{post.description}</div>
+          ) : (
+            <>
+              <textarea
+                name="description"
+                value={editData.description}
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                name="media"
+                placeholder="URL de la imagen del post"
+                value={editData.media}
+                onChange={handleChange}
+              />
+            </>
+          )}
+
+          <div className="edit-buttons">
+            {!isEditing ? (
+              <>
+                <button onClick={() => setIsEditing(true)}>Editar</button>
+                <button className="danger" onClick={handleDelete}>
+                  Borrar
+                </button>
+              </>
+            ) : (
+              <>
+                <button onClick={handleSave}>Guardar</button>
+                <button
+                  onClick={() => {
+                    setIsEditing(false);
+                    setEditData({
+                      title: post.title || "",
+                      description: post.description || "",
+                      media: post.media || "",
+                    });
+                  }}
+                >
+                  Cancelar
+                </button>
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>
