@@ -27,8 +27,8 @@ function SquarePicturesWithMargin() {
           >
             
             <img
-              srcSet={`${pet.media}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-              src={`${pet.media}?w=164&h=164&fit=crop&auto=format`}
+              srcSet={pet.media}
+              src={pet.media}
               alt={pet.name}
               loading="lazy"
             />
