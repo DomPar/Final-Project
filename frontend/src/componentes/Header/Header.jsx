@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { getOwnUser } from '../../services/userService';
 import { getOwnShelter } from '../../services/shelterService';
 
-// SVG Icons Components
 const MenuIcon = () => (
   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
     <line x1="3" y1="6" x2="21" y2="6"/>
@@ -102,7 +101,9 @@ const Header = ({setter, isShelter}) => {
         </Link>
       </div>   
 
-      <div id="header-titulo"></div>
+      <div id="header-titulo">
+        <h1>PetFriends</h1>
+      </div>
       
       <div id="link-profile">
         <button 
