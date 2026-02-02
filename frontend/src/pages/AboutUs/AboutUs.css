@@ -1,74 +1,61 @@
-#new-about-us-container {
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    height: 80vh;
+.aboutus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  min-height: 100%;
 }
 
-#newaboutuscontainer {
-    grid-area: 2/3/10/17;
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    position: relative;
-    box-shadow: 10px 5px 5px rgb(179, 171, 171);
-    border: none;
-    border-radius: 20px;
-    background-color: rgb(243, 226, 205);
+.aboutus-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px var(--shadow);
+  padding: 40px;
+  max-width: 1000px;
+  width: 100%;
 }
 
-
-#foto2{
-    background-image: url("/images/Foto2.png");
-    background-size: cover;
-    grid-area: 2/14/6/18;
-    resize: none;
-    border: none;
-    border-radius: 20px;
+.aboutus-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
 }
 
-#text-about-us1 {
-    grid-area: 2/2/5/12;
-}
-#text-about-us2 {
-    grid-area: 7/9/10/20;
+.aboutus-row:last-child {
+  margin-bottom: 0;
 }
 
-#foto1{
-    background-image: url("/images/Foto1.png");
-    background-size: cover;
-    resize: none;
-    grid-area: 6/4/10/8;
-    border-radius: 20px;
-    box-shadow: 10px 5px 5px rgb(179, 171, 171);
-    border: none;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
+.aboutus-text {
+  flex: 1;
 }
 
-#media-container{
-    background-color: white;
-    grid-column: 2/3;
-    grid-row: 2/5;
-    max-width: 400px;
-    max-height: 400px;
-    overflow: hidden;
-    text-align: center;
-    border-radius: 20px;
-    box-shadow: 10px 5px 5px rgb(179, 171, 171);
-    border: none;
+.aboutus-text h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--text-dark);
 }
 
-#media {
-    max-width: 400px;
-    max-height: 400px;
+.aboutus-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-medium);
 }
 
+.aboutus-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px var(--shadow);
+}
 
-#text-about-us{
-    grid-column: 2/3;
-    grid-row: 5/6;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+@media (max-width: 768px) {
+  .aboutus-row {
+    flex-direction: column;
+  }
+  
+  .aboutus-image {
+    width: 100%;
+  }
 }
