@@ -8,22 +8,22 @@ const navigate = useNavigate()
     <div id='sidebar-container' className={sidebarDisplay}>
         <div className="sidebar-item" onClick={()=>{navigate('/app/')}}>
           <button id='home-button'></button>
-          <span className="sidebar-label">Home</span>
+          <span className="sidebar-label">Inicio</span>
         </div>
         
         <div className="sidebar-item" onClick={()=>{navigate('/app/ownprofile')}}>
           <button id='profile-button'></button>
-          <span className="sidebar-label">Profile</span>
+          <span className="sidebar-label">Perfil</span>
         </div>
         
         <div className="sidebar-item" onClick={()=>{navigate('/app/listofshelters')}}>
           <button id='shelters-button'></button>
-          <span className="sidebar-label">Shelters</span>
+          <span className="sidebar-label">Refugios</span>
         </div>
         
         <div className="sidebar-item" onClick={()=>{navigate('/app/aboutus')}}>
           <button id='about-us-button'></button>
-          <span className="sidebar-label">About</span>
+          <span className="sidebar-label">Sobre nosotros</span>
         </div>
     </div>
   )

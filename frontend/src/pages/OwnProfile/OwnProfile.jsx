@@ -65,7 +65,8 @@ function OwnProfile() {
 
   const sendAvatar = async (e) => {
     const result = await updateUserAvatar({avatar})
-    setUpdate(!update)
+    setUpdate(!update);
+    window.location.reload();
     return result;
   }
   

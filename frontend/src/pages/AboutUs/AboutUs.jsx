@@ -2,21 +2,27 @@ import './AboutUs.css'
 
 function AboutUs() {
   return (
-    <div id="new-about-us-container">
-      <div id='newaboutuscontainer'>
-          <div id="text-about-us1">
-            <p>
-            Cheesecake cotton candy jelly-o gingerbread pie sweet roll sweet chocolate. Jelly-o pastry macaroon topping soufflé dragée. Cotton candy chocolate candy caramels cheesecake cookie. Brownie marshmallow sugar plum dragée lemon drops cake gummies.
-            </p>
+    <div className="aboutus-container">
+      <div className="aboutus-card">
+        
+        <div className="aboutus-row">
+          <div className="aboutus-text">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div id="text-about-us2">
-            <p>
-            Ice cream gummi bears apple pie chupa chups biscuit cotton candy cotton candy muffin. Cake toffee biscuit candy macaroon. Croissant bear claw chocolate cake topping cotton candy oat cake marshmallow shortbread. Jelly chocolate bar marzipan tart sweet roll.
-            </p>
+          <img src=".././images/UserRegister.jpg" alt="" id=""/>
+        </div>
+
+        <div className="aboutus-row">
+          <img src=".././images/WelcomePicture.png" alt="" id=""/>
+          <div className="aboutus-text">
+            <h2>Lorem Ipsum</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
         </div>
+
+      </div>
     </div>
-    
   )
 }
 
