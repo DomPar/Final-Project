@@ -10,11 +10,11 @@ function AboutUs() {
             <h2>Lorem Ipsum</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <img src=".././images/UserRegister.png" alt="" id=""/>
+          <img src=".././images/UserRegister.png" alt="" className="aboutus-image"/>
         </div>
 
         <div className="aboutus-row">
-          <img src=".././images/WelcomePicture.jpg" alt="" id=""/>
+          <img src=".././images/WelcomePicture.jpg" alt="" className="aboutus-image"/>
           <div className="aboutus-text">
             <h2>Lorem Ipsum</h2>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
