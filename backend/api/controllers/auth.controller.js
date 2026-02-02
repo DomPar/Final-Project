@@ -32,11 +32,15 @@ async function signup(req, res) {
 
 async function login(req, res) {
   try {
+    console.log('🔍 Login attempt:', req.body.email)
+    
     const shelter = await Shelter.findOne({
       where: {
         email: req.body.email
       }
     })
+    
+    console.log('Shelter found:', shelter ? 'YES' : 'NO')
 
     if (shelter === null) {
       const user = await User.findOne({
@@ -44,9 +48,14 @@ async function login(req, res) {
           email: req.body.email
         }
       })
+      
+      console.log('User found:', user ? 'YES' : 'NO')
+      
       if (!user && !shelter) { return res.status(404).send('Error: Email or Password incorrect') }
       if (user) {
         const comparePassUser = bcrypt.compareSync(req.body.password, user.password)
+        console.log('Password match:', comparePassUser)
+        
         if (comparePassUser) {
           const payload = { email: user.email, type: 'user' }
           const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '3h' })
@@ -64,6 +73,8 @@ async function login(req, res) {
 
     if (shelter) {
       const comparePassShelter = bcrypt.compareSync(req.body.password, shelter.password)
+      console.log('Shelter password match:', comparePassShelter)
+      
       if (comparePassShelter) {
         const payload = { email: shelter.email, type: 'manager' }
         const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '3h' })
@@ -80,6 +91,7 @@ async function login(req, res) {
     }
   }
   catch (error) {
+    console.error('❌ Login error:', error)
     res.status(500).json({
       message: 'Error Log in ',
       result: error
