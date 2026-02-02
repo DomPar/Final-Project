@@ -102,7 +102,7 @@ const Header = ({setter, isShelter}) => {
       </div>   
 
       <div id="header-titulo">
-        <h1>PetFriends</h1>
+        <img src=".././images/PetFriendsTitle1.png" alt="Titulo PetFriends" id="header-titulo-image"/>
       </div>
       
       <div id="link-profile">
