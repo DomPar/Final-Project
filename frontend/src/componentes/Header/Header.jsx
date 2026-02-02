@@ -102,7 +102,9 @@ const Header = ({setter, isShelter}) => {
       </div>   
 
       <div id="header-titulo">
+        <Link to={URL}>
         <img src=".././images/PetFriendsTitle1.png" alt="Titulo PetFriends" id="header-titulo-image"/>
+        </Link>
       </div>
       
       <div id="link-profile">
