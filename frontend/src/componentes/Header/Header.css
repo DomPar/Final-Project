@@ -47,7 +47,9 @@
     height: 38px;
 }
 
-#header-titulo {
+#header-titulo-image {
+    width: 250px;
+    height: auto;
 }
 
 #link-profile {
