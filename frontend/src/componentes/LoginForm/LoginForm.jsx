@@ -31,7 +31,7 @@ function LoginCard() {
           alt="Logo PetFriends" 
           className="login-logo"
         />
-        <h2 className="login-title">Welcome Back!</h2>
+        <h2 className="login-title">Bienvenidos PetFriends</h2>
       </div>
       
       <div className="login-content">
@@ -42,31 +42,31 @@ function LoginCard() {
             type="email"
             onChange={(e) => setEmail(e.target.value)}
             className="form-input"
-            placeholder="Enter your email"
+            placeholder="Introduce tu email"
           />
         </div>
         
         <div className="form-group">
-          <label htmlFor="password" className="form-label">Password</label>
+          <label htmlFor="password" className="form-label">Contraseña</label>
           <input
             id="password"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
             className="form-input"
-            placeholder="Enter your password"
+            placeholder="Introduce tu contraseña"
           />
         </div>
       </div>
       
       <div className="login-actions">
         <button className="btn btn-primary" onClick={onLogin}>
-          Log In
+          Acceder
         </button>
         
         <div className="signup-link">
-          <span>Don't have an account? </span>
+          <span>¿No tienes cuenta? </span>
           <Link to='/chooseuser' className="link-text">
-            Sign Up
+            Regístrate
           </Link>
         </div>
       </div>

@@ -37,34 +37,34 @@ function NewPet() {
             <input 
               type="text"
               id="petname" 
-              placeholder="Pet's name..." 
+              placeholder="Nombre mascota..." 
               onChange={(e) => setName(e.target.value)}
             />
             <input 
               type="text"
               id="petspecies" 
-              placeholder="Species..." 
+              placeholder="Especie..." 
               onChange={(e) => setSpecies(e.target.value)}
             />
             <input 
               type="number" 
               min={0}
               id="petage" 
-              placeholder="Age..." 
+              placeholder="Edad..." 
               onChange={(e) => setAge(e.target.value)}
             />
             <textarea 
               id="petdescription" 
-              placeholder="Description..." 
+              placeholder="Descripción..." 
               onChange={(e) => setDescription(e.target.value)}
             />
             <textarea 
               id="petpreferences" 
-              placeholder="Preferences..." 
+              placeholder="Características..." 
               onChange={(e) => setPreferences(e.target.value)}
             />
             <div id="share-container">
-              <button id='share' onClick={createPet}>Add Pet</button>
+              <button id='share' onClick={createPet}>Añadir Mascota</button>
             </div>
           </div>
         </div>

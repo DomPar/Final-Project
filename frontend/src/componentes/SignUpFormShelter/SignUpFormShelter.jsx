@@ -90,7 +90,7 @@ function SignUpSCard() {
           <input
             type="password"
             className="form-input"
-            placeholder="••••••••"
+            placeholder="Contraseña"
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
@@ -100,7 +100,7 @@ function SignUpSCard() {
           <input
             type="password"
             className="form-input"
-            placeholder="••••••••"
+            placeholder="Contraseña"
             onChange={(e) => setPasswordR(e.target.value)}
           />
         </div>
@@ -110,7 +110,7 @@ function SignUpSCard() {
           <input
             type="text"
             className="form-input"
-            placeholder="A12345678"
+            placeholder="12345678"
             onChange={(e) => setCif(e.target.value)}
           />
         </div>

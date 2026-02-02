@@ -34,17 +34,17 @@ function NewPost() {
             <textarea 
               name="ADD TITLE" 
               id="titledescription" 
-              placeholder='Add title...' 
+              placeholder='Añadir título...' 
               onChange={(e) => setTitle(e.target.value)}
             />
             <textarea 
               name="POST'S DESCRIPTION" 
               id="textdescription" 
-              placeholder='Add Description...' 
+              placeholder='Añadir descripción...' 
               onChange={(e) => setDescription(e.target.value)}
             />
             <div id="share-container">
-              <button id='share' onClick={create}>Share Post</button>
+              <button id='share' onClick={create}>Publicar</button>
             </div>
           </div>
         </div>
