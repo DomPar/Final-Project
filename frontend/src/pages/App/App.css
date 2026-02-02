@@ -1,0 +1,36 @@
+#main-container {
+    height: calc(100vh - 60px - 5vh);
+    width: 100%;
+    display: flex;
+    background-image: url(/images/Background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#sidebar-grid {
+    flex-shrink: 0;
+}
+
+#outlet-grid {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#outlet-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+#outlet-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#outlet-grid::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+#outlet-grid::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,111 @@
+#petcard-container {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#pet-picture {
+    width: 450px;
+    height: 550px;
+    background-color: var(--bg-card);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px var(--shadow);
+    background-size: cover;
+    background-position: center;
+}
+
+#pet-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#pet-description {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 2px 12px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#pet-description h1 {
+    font-size: 26px;
+    margin: 0;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pet-description h6 {
+    font-size: 14px;
+    color: var(--text-medium);
+    margin: 0;
+    font-weight: 500;
+}
+
+#pet-description p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-medium);
+    margin: 0;
+}
+
+#petcard-add-fav {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 8px;
+    transition: transform 0.2s;
+}
+
+#petcard-add-fav:hover {
+    transform: scale(1.1);
+}
+
+#hobbiesbox {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 2px 12px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+#hobbies {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 0 0 8px 0;
+}
+
+#text {
+    font-size: 14px;
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+#list-picture {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media (max-width: 1024px) {
+    #petcard-container {
+        grid-template-columns: 1fr;
+    }
+    
+    #pet-picture {
+        width: 100%;
+        height: 400px;
+    }
+}

@@ -1,0 +1,67 @@
+#shelter-list-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#shelter {
+    display: flex;
+    gap: 15px;
+    background: var(--bg-card);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: all 0.2s;
+}
+
+#shelter:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+#shelter-profile {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+#shelter-list-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#shelter-list-info h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
+#shelter-list-info p {
+    font-size: 13px;
+    color: var(--text-medium);
+    line-height: 1.4;
+}
+
+#go-shelter-button {
+    align-self: flex-end;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#go-shelter-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}

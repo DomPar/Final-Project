@@ -1,0 +1,27 @@
+#postlist-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#post-feed {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#post-feed::-webkit-scrollbar {
+    width: 6px;
+}
+
+#post-feed::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#post-feed::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+}

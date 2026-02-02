@@ -108,6 +108,7 @@ async function signupShelter(req, res) {
         },
       })
   } catch (error) {
+    console.error('ERROR EN SIGNUPSHELTER:', error)
     res.status(500).json({
       message: 'Error signing up',
       result: error.message

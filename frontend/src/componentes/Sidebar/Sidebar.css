@@ -1,0 +1,81 @@
+#sidebar-container {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    padding: 15px 0;
+    gap: 8px;
+    background: var(--bg-card);
+    border-right: 1px solid var(--border);
+    height: 100%;
+    align-items: center;
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 80px;
+}
+
+.sidebar-item:hover {
+    background: var(--accent);
+}
+
+#home-button,
+#shelters-button,
+#profile-button,
+#about-us-button {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    border: none;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.sidebar-label {
+    font-size: 10px;
+    color: var(--text-medium);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+}
+
+#shelters-button {
+    background-image: url('/images/2.png');
+}
+
+#home-button {
+    background-image: url('/images/3.png');
+}
+
+#profile-button {
+    background-image: url('/images/5.png');
+}
+
+#about-us-button {
+    background-image: url('/images/1.png');
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+    transition: all 0.3s;
+}

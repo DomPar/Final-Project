@@ -1,0 +1,104 @@
+#dashboard-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#main-feed {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 12px var(--shadow);
+    overflow-y: auto;
+}
+
+#weekly-section {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#weekly-title {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+#weekly-title img {
+    width: 100%;
+    height: auto;
+}
+
+#weekly-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 2px 8px var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pet-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: var(--bg-main);
+    border-radius: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.pet-item:hover {
+    transform: translateX(3px);
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.pet-img {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.pet-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+#weekly-pet-img1 {
+    background-image: url('https://res.cloudinary.com/dytjoh7oh/image/upload/v1709668137/le5lou7imm9c5rrndgpj.jpg');
+}
+
+#weekly-pet-img2 {
+    background-image: url('https://res.cloudinary.com/dytjoh7oh/image/upload/v1709672318/piwlhqzdd61m4b97jjcy.jpg');
+}
+
+#weekly-pet-img3 {
+    background-image: url('https://res.cloudinary.com/dytjoh7oh/image/upload/v1709668093/mnpktfvdks9qdemlwanr.jpg');
+}
+
+@media (max-width: 1024px) {
+    #dashboard-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #weekly-section {
+        width: 600px;
+    }
+}

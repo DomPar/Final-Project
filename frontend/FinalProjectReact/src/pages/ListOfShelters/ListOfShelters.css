@@ -1,7 +1,0 @@
-#list-of-shelter-container {
-    display: grid;
-    grid-template-columns: 8fr 1fr;
-    height: 70vh;
-    overflow: auto;
-
-} 
