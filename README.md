@@ -22,6 +22,10 @@ Plataforma de adopción de mascotas que conecta refugios con futuros adoptantes.
 **Demo en vivo:** [https://tu-deploy.netlify.app](https://tu-deploy.netlify.app)
 
 ### Página Principal
+![login](./public/images/login.png)
+*Vista principal donde los usuarios pueden explorar mascotas disponibles para adopción*
+
+### Página Principal
 ![Dashboard](./screenshots/dashboard.png)
 *Vista principal donde los usuarios pueden explorar mascotas disponibles para adopción*
 
