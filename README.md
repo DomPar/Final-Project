@@ -127,9 +127,8 @@ CREATE DATABASE FinalProject;
 **Backend:**
 ```bash
 cd backend
-npm start
+node index.jx
 # o con nodemon
-npm run dev
 ```
 
 **Frontend:**
