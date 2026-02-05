@@ -19,7 +19,7 @@ PetFriends es una red social dedicada al mundo de las mascotas que combina dos f
 
 ## 🎨 Demo / Capturas
 
-**Demo en vivo:** [https://tu-deploy.netlify.app](https://tu-deploy.netlify.app)
+**Demo en vivo:** [https://petfriendsdom.netlify.app/](https://petfriendsdom.netlify.app/)
 
 ### Log In
 ![login](./frontend/public/images/login.png)

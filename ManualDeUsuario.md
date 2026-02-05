@@ -27,7 +27,7 @@ PetFriends es una plataforma que conecta personas que desean adoptar mascotas co
 ### Acceder a la Plataforma
 
 1. Abre tu navegador web
-2. Ve a [https://tu-deploy.netlify.app](https://tu-deploy.netlify.app)
+2. Ve a [https://petfriendsdom.netlify.app/](https://petfriendsdom.netlify.app/)
 3. Verás la página de inicio de sesión
 
 ---
