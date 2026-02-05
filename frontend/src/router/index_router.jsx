@@ -27,13 +27,13 @@ const router = createBrowserRouter([
             {
                 path: '/app',
                 element: <Dashboard/>,
-                // loader: () => {
-                //     if (!localStorage.getItem('token')) {
-                //         return redirect('/')
-                //     } else {
-                //         return null
-                //     }
-                // }
+                loader: () => {
+                    if (!localStorage.getItem('token')) {
+                        return redirect('/')
+                    } else {
+                        return null
+                    }
+                }
             },
             {
                 path: '/app/ownprofile',
