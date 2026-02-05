@@ -1,6 +1,6 @@
 # PetFriends
 
-Plataforma de adopción de mascotas que conecta refugios con futuros adoptantes. Los usuarios pueden explorar perfiles de animales, crear publicaciones sobre sus mascotas y gestionar procesos de adopción de forma sencilla e intuitiva.
+PetFriends es una red social dedicada al mundo de las mascotas que combina dos funciones principales: por un lado, permite a los amantes de los animales compartir momentos, experiencias y publicaciones sobre sus compañeros peludos, creando una comunidad donde pueden interactuar con otros usuarios a través de un feed dinámico. Por otro lado, la plataforma conecta refugios de animales con personas interesadas en adoptar, permitiendo a las organizaciones gestionar catálogos completos de mascotas disponibles, incluyendo fotos, descripciones detalladas y requisitos de adopción, facilitando así el proceso de encontrar un hogar para cada animal.
 
 ---
 
@@ -21,21 +21,29 @@ Plataforma de adopción de mascotas que conecta refugios con futuros adoptantes.
 
 **Demo en vivo:** [https://tu-deploy.netlify.app](https://tu-deploy.netlify.app)
 
-### Página Principal
-![login](./public/images/login.png)
-*Vista principal donde los usuarios pueden explorar mascotas disponibles para adopción*
+### Log In
+![login](./frontend/public/images/login.png)
+*Pantalla para acceder o registrarse a la aplicación.*
 
 ### Página Principal
-![Dashboard](./screenshots/dashboard.png)
-*Vista principal donde los usuarios pueden explorar mascotas disponibles para adopción*
+![Dashboard](./frontend/public/images/dashboard.png)
+*Vista principal donde los usuarios ven los post publicados por otros usuarios.*
+
+### Perfil de Usuario
+![Perfil Usuario](./frontend/public/images/userProfile.png)
+*Perfil del propio usuario donde puede acceder a sus publicaciones.*
 
 ### Perfil de Mascota
-![Pet Profile](./screenshots/pet-profile.png)
-*Información detallada de cada mascota con fotos, descripción y preferencias*
+![Perfil Mascota](./frontend/public/images/petProfile.png)
+*Información detallada de cada mascota con fotos, descripción y preferencias.*
+
+### Perfil de Refugio desde usuario
+![Perfil Refugio desde usuario](./frontend/public/images/shelterFromUser.png)
+*Perfil del refugio desde la perspectiva del usuario.*
 
 ### Panel de Refugio
-![Shelter Dashboard](./screenshots/shelter-dashboard.png)
-*Gestión de mascotas desde la perspectiva del refugio*
+![Gestión Refugio](./frontend/public/images/shelterAdmin.png)
+*Gestión de mascotas desde la perspectiva del refugio.*
 
 ---
 
